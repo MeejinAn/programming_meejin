@@ -8,16 +8,16 @@ while True:
     m = int(m)
     d = int(d)
     date2 = date(y, m, d)
-    tday = date.today()
+    Today = date.today()
 
-    if (date2 - tday).days < 0:
-        print ("이미 지났습니다.")
+    if (date2 - Today).days < 0:
+        print ("이미 지났습니다. 다시 입력해주세요.")
         continue
-    elif (date2 - tday).days == 0:
+    elif (date2 - Today).days == 0:
         print (name, "D-DAY")
         break
     else:
-        print (name, "D-",(date2 - tday).days)
+        print (name, "D-",(date2 - Today).days)
         break
 
 
